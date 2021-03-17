@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>123456</title>
+<link rel="stylesheet" href="csstrasparente.css">
+</head>
+<body onselectstart="return false">
+<p>Cenerentola 
+La moglie di un uomo ricco si ammalò e quando sentì che si avvicinava la fine, chiamò al capezzale la sua unica figlioletta e disse: «Cara bambina, conservati buona e pia, così il buon Dio ti assisterà sempre, e io ti guarderò dal cielo e ti sarò accanto». Poi chiuse gli occhi e spirò. La fanciulla andava ogni giorno sulla tomba della madre, piangeva, e si conservava buona e pia. Quando venne l'inverno la neve stese una coltre bianca sulla tomba, e quando in primavera il sole l'ebbe tolta, l' uomo prese una seconda moglie. La donna aveva portato in casa due figlie, che erano bianche e belle in viso, ma nere e brutte nel cuore. Allora per la povera figliastra cominciarono tempi bui. «Perché questa stupida oca deve stare in salotto con noi?!», dicevano. «Chi vuol mangiare pane deve guadagnarselo; fuori la sguattera!». Le tolsero i suoi bei vestiti, le misero addosso un vecchio grembiule grigio e le diedero un paio di zoccoli. «Guardate un po' la superba principessa, come si è acconciata!», esclamarono ridendo, e la condussero in cucina. Là doveva faticare da mattina a sera, alzarsi prima che facesse giorno, portare l'acqua, accendere il fuoco, cucinare e lavare.</p>
+<p id="ciao">ciao</p>
+
+<script>   <!-- blocco tasto destro del mouse -->
+  function blocco_mousedx()
+   { return(false); }
+  document.oncontextmenu = blocco_mousedx;
+ <!-- blocco scorciatoie da tastiera -->
+ document.onkeydown = function(blocco_tasti) {
+  if(event.keyCode == 123) 
+{ return false; }
+  if(blocco_tasti.ctrlKey && blocco_tasti.shiftKey && blocco_tasti.keyCode == 'I'.charCodeAt(0)) { return false; }
+  if(blocco_tasti.ctrlKey && blocco_tasti.shiftKey && blocco_tasti.keyCode == 'C'.charCodeAt(0)) { return false; }
+  if(blocco_tasti.ctrlKey && blocco_tasti.keyCode == 'C'.charCodeAt(0)) { return false; }
+  if(blocco_tasti.ctrlKey && blocco_tasti.shiftKey && blocco_tasti.keyCode == 'J'.charCodeAt(0)) { return false; }
+  if(blocco_tasti.ctrlKey && blocco_tasti.keyCode == 'U'.charCodeAt(0)) 
+{ return false; } 
+}
+ 
+
+    </script>
+
+</body>
+</html>
